@@ -1,0 +1,57 @@
+.products
+    margin-top: 59px
+    @media (max-width: 768px)
+        margin-top: 90px
+
+.categories
+    @include flex-gap(11px)
+    flex-wrap: wrap
+    margin-top: 71px 
+    @media (max-width: 768px)
+        flex-direction: column
+        margin-top: 82px 
+        gap: 12px
+        
+.category
+    display: flex
+    height: 341px
+    background: #000 no-repeat center/cover
+    border-radius: 4px
+    align-items: flex-end
+    padding-bottom: 18px
+    &_small
+        width: 492px 
+        @media (max-width: 1255px)
+            width: 742px 
+        @media (max-width: 768px)
+            width: 100%     
+    &_big
+        width: 742px
+        @media (max-width: 768px)
+            width: 100%   
+    &_one
+        background-image: url(../imagen/table\ top.svg)
+    &_two
+        background-image: url(../imagen/windowsill.svg)
+        justify-content: flex-end
+    &_three
+        background-image: url(../imagen/shells.png)
+    &_four
+        background-image: url(../imagen/panel.svg)
+        justify-content: flex-end
+    &__title
+        width: 470px
+        height: 58px
+        background: linear-gradient(177deg, rgba(0, 0, 0, 0.87) 2.22%, rgba(0, 0, 0, 0.55) 97.78%)
+        color: #FFF
+        font-size: 24px
+        font-weight: 500
+        letter-spacing: 1px
+        text-transform: uppercase
+        text-align: center
+        @include flex(center)
+        align-items: center
+        @media (max-width: 768px) 
+            width: 100%
+            height: 48px
+            font-size: 18px

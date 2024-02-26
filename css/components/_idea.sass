@@ -1,0 +1,82 @@
+.idea
+    &_padding
+        padding: 0
+
+
+.boxes
+    @include flex-gap(21px)
+    margin-top: 63px
+    @media (max-width: 768px)
+        flex-direction: column
+        gap: 0
+        
+
+.painting
+    display: flex
+    img
+        width: 100%
+    @media (max-width: 768px)
+        flex-direction: column 
+        width: 100%
+        img
+            object-fit: cover
+            height: 350px  
+    &_span
+        display: flex
+        gap: 22px 
+        img 
+            width: 100%
+            display: block 
+            @media (max-width: 768px)
+                object-fit: cover
+                height: 350px
+        @media (max-width: 768px)   
+            flex-direction: column 
+            gap: 0       
+            
+.bath_two
+    padding-top: 13px
+    @media (max-width: 768px)
+        padding: 0
+        
+.bath_one
+    padding-top: 14px
+    @media (max-width: 768px)
+        padding: 0
+    
+.button_wrap
+    @include flex(flex-end)
+    @media (max-width: 768px) 
+        justify-content: center
+        padding: 0 24px 
+
+.button
+    @include flex(center)
+    max-width: 415px
+    height: 52px
+    padding: 0px 28px
+    align-items: center
+    gap: 10px
+    cursor: pointer
+    border: 1px solid #28553F
+    background: #28553F
+    margin-top: 66px
+    box-shadow: 1px 1px 5px black
+    &:active
+        box-shadow: none
+    @media (max-width: 768px) 
+        width: 100%
+    &_text
+        max-width: 419px
+        color: #FFF
+        text-align: center
+        font-size: 18px
+        @media (max-width: 768px)   
+            font-size: 14px
+    &_arrow
+        width: 35px
+        stroke-width: 1px
+        stroke: #FFF
+        
+
+

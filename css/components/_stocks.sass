@@ -1,0 +1,220 @@
+.stocks
+    margin-top: 165px
+    height: 1136px
+    width: 100%
+    @media (max-width: 1063px) 
+        height: 1370px
+    background: url(../imagen/stocks.jpg) #000 no-repeat center/cover
+    &_gradient
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 36.74%, rgba(0, 0, 0, 0.21) 100%)
+        height: 100%
+        
+
+.windows
+    width: 1440px
+    display: flex
+    gap: 34px
+    @media (max-width: 1400px)
+        width: 100%
+    &_block
+        position: relative
+        padding-top: 337px
+        @media (max-width: 1062px)
+            padding-top: 46px
+    @media (max-width: 1060px)
+        flex-direction: column
+         
+    
+
+.green_hoop
+    z-index: 0
+    width: 680px
+    height: 503px
+    border: 1px solid #28553F
+    position: absolute
+    top: 317px
+    left: -46px
+    @media (max-width: 1062px) 
+        display: none
+
+
+.stocks_shell
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: center
+    width: 707px
+    height: 438px
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.87) 62.37%, rgba(0, 0, 0, 0.24) 100%)
+    @media (max-width: 767px) 
+        width: 100%
+        height: 395px
+        padding-left: 23px
+        
+        
+
+.window__line
+    max-width: 120px
+    height: 1px
+    background: #FFF
+
+.windows__text
+    max-width: 510px
+    color: #FFF
+    font-size: 43px
+    font-weight: 500
+    text-transform: uppercase
+    span
+        color: #28553F
+    @media (max-width: 767px)
+        font-size: 30px
+        max-width: 342px
+
+.text__small
+    max-width: 550px
+    color: #FFF
+    font-size: 22px
+    font-weight: 400
+    padding-top: 34px
+    line-height: normal
+    @media (max-width: 767px)
+        font-size: 16px
+        max-width: 342px
+
+
+.promotion
+    padding-top: 102px
+    display: flex
+    flex-wrap: wrap
+    width: 601px
+    gap: 37px
+    @media (max-width: 1300px)
+        flex-direction: column
+    @media (max-width: 1062px)
+        padding-top: 49px
+    @media (max-width: 768px)
+        max-width: 100%
+        padding-left: 24px
+    @media (max-width: 315px)
+        padding-left: 0
+    &_block
+        width: 282px
+        height: 445px
+        border: 1px solid #FFF
+        opacity: 0.82
+        padding: 14px 18px 0 17px
+        background: rgba(255, 255, 255, 0.96)
+        @media (max-width: 768px)
+            width: 268px
+            height: 388px
+            padding: 14px auto
+    &_image
+        display: flex
+
+        height: 220px 
+        background-image: url(../imagen/stocks-small.svg)
+        justify-content: flex-end
+    &_gradient 
+        display: flex  
+        color: #000
+        font-size: 17px
+        font-weight: 300
+        width: 86px
+        height: 34px
+        background: rgba(255, 255, 255, 0.45)
+        text-align: center
+        justify-content: center
+        align-items: center
+        
+    &_title
+        color: #28553F
+        font-size: 14px
+        font-weight: 700
+        font-variant-numeric: lining-nums proportional-nums
+        padding-top: 26px
+        @media (max-width: 768px)
+            padding-top: 22px
+
+    &_text
+        max-width: 220px
+        color: #000
+        font-size: 16px
+        font-weight: 500
+        font-variant-numeric: lining-nums proportional-nums
+    &_sum
+        display: flex
+        padding-top: 16px
+        @media (max-width: 768px)
+            padding-top: 5px
+
+.case
+    margin-left: 31px
+    
+
+.number
+    max-width: 145px
+    
+.sum_one
+    display: flex
+    text-align: center
+    gap: 4px
+    justify-content: center
+    align-items: center
+
+.one__numbers
+    color: #28553F
+    font-size: 20px
+    font-weight: 700
+    font-variant-numeric: lining-nums proportional-nums  
+    
+.one__img
+    width: 14px
+    height: 14px
+    
+
+.sum_two
+    display: flex
+    padding-left: 76px
+    @media (max-width: 768px)
+        padding-left: 46px
+
+.two__numbers
+    color: #949981
+    font-variant-numeric: lining-nums proportional-nums
+    font-size: 14px
+    font-weight: 400
+    text-decoration: line-through
+     
+.two__img
+    width: 10px
+    height: 10px
+
+.promotion_button
+    display: flex
+    max-width: 238px
+    height: 60px
+    background: #28553F
+    margin-top: 21px
+    text-align: center
+    justify-content: center
+    align-items: center
+    &:hover
+        background:#081b12
+        transition: 0.3s
+    @media (max-width: 767px)  
+        max-width: 234px
+        height: 34px 
+        margin-top: 10px
+
+.button__small
+    color: #FFF
+    font-size: 17px
+    font-weight: 400
+    
+    
+.block_two  
+    @media (max-width: 1300px)
+        display: none
+
+.window_button
+    padding-top: 41px
